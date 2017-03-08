@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="Device1(failed)" parallel="tests">
+    <parameter name="platformVersion_" value="5.1.0"/>
+    <parameter name="URL_" value="127.0.0.1:1010/wd/hub"/>
+    <parameter name="UDID_" value="192.168.137.101:5555"/>
+    <parameter name="deviceName_" value="GalaxyS6"/>
+    <classes>
+      <class name="demo.appium.parallel.andriod.Appium_TestNG_Sample_One">
+        <methods>
+          <include name="landing" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- demo.appium.parallel.andriod.Appium_TestNG_Sample_One -->
+    </classes>
+  </test> <!-- Device1(failed) -->
+  <test name="Device3(failed)" parallel="tests">
+    <parameter name="platformVersion_" value="6.0.0"/>
+    <parameter name="URL_" value="127.0.0.3:1050/wd/hub"/>
+    <parameter name="UDID_" value="0815f83dd9d41c01"/>
+    <parameter name="deviceName_" value="GalaxyS5"/>
+    <classes>
+      <class name="demo.appium.parallel.andriod.Appium_TestNG_Sample_One">
+        <methods>
+          <include name="landing" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- demo.appium.parallel.andriod.Appium_TestNG_Sample_One -->
+    </classes>
+  </test> <!-- Device3(failed) -->
+</suite> <!-- Failed suite [Suite] -->
