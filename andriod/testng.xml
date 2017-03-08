@@ -3,9 +3,9 @@
 <suite name="Suite" parallel="tests" thread-count="3">
 	<test name="Device1">
 		<parameter name="deviceName_" value="GalaxyS6" />
-		<parameter name="UDID_" value="192.168.137.101:5555" />
+		<parameter name="UDID_" value="192.168.1.136:5555" />
 		<parameter name="platformVersion_" value="5.1.0" />
-		<parameter name="URL_" value="127.0.0.1:1010/wd/hub" />
+		<parameter name="URL_" value="127.0.0.1:4238/wd/hub" />
 		<classes>
 			<class name="demo.appium.parallel.andriod.Appium_TestNG_Sample_One" />
 		</classes>

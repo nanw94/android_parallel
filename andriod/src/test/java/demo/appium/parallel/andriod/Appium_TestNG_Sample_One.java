@@ -44,9 +44,18 @@ public class Appium_TestNG_Sample_One {
 		driver = new AndroidDriver<MobileElement>(new URL("http://"+URL_), capabilities);
 		driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 		
-		driver.get("https://68.66.0.106");
+		driver.get("http://guru99.com");
 		
 		Thread.sleep(10000);
+		
+		driver.get("http://www.guru99.com/selenium-tutorial.html");
+		
+		Thread.sleep(3000);
+		
+		driver.get("http://www.guru99.com/mobile-testing.html");
+		
+		Thread.sleep(3000);
+
 		
 		driver.quit();
 	}

@@ -1,210 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="67620" started-at="2017-03-02T10:19:42Z" finished-at="2017-03-02T10:20:49Z">
+  <suite name="Suite" duration-ms="263064" started-at="2017-03-08T10:10:58Z" finished-at="2017-03-08T10:15:21Z">
     <groups>
     </groups>
-    <test name="Device1" duration-ms="1206" started-at="2017-03-02T10:19:42Z" finished-at="2017-03-02T10:19:43Z">
+    <test name="Device2" duration-ms="248029" started-at="2017-03-08T10:10:58Z" finished-at="2017-03-08T10:15:06Z">
       <class name="demo.appium.parallel.andriod.Appium_TestNG_Sample_One">
-        <test-method status="FAIL" signature="landing(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:demo.appium.parallel.andriod.Appium_TestNG_Sample_One@28d25987]" name="landing" duration-ms="1178" started-at="2017-03-02T18:19:42Z" finished-at="2017-03-02T18:19:43Z">
+        <test-method status="PASS" signature="landing(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:demo.appium.parallel.andriod.Appium_TestNG_Sample_One@6093dd95]" name="landing" duration-ms="248010" started-at="2017-03-08T18:10:58Z" finished-at="2017-03-08T18:15:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[GalaxyS6]]>
+                <![CDATA[Tablet 4]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[192.168.137.101:5555]]>
+                <![CDATA[192.168.1.166:5555]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[5.1.0]]>
+                <![CDATA[5.1.1]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[127.0.0.1:1010/wd/hub]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.1.0', revision: 'b94c902', time: '2017-02-16 12:21:31 -0800'
-System info: host: 'S19', ip: '192.168.137.2', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_112'
-Driver info: driver.version: AndroidDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.1.0', revision: 'b94c902', time: '2017-02-16 12:21:31 -0800'
-System info: host: 'S19', ip: '192.168.137.2', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_112'
-Driver info: driver.version: AndroidDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:161)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:64)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:69)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
-	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:36)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
-	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:92)
-	at demo.appium.parallel.andriod.Appium_TestNG_Sample_One.landing(Appium_TestNG_Sample_One.java:47)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- landing -->
-      </class> <!-- demo.appium.parallel.andriod.Appium_TestNG_Sample_One -->
-    </test> <!-- Device1 -->
-    <test name="Device3" duration-ms="1208" started-at="2017-03-02T10:19:42Z" finished-at="2017-03-02T10:19:43Z">
-      <class name="demo.appium.parallel.andriod.Appium_TestNG_Sample_One">
-        <test-method status="FAIL" signature="landing(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:demo.appium.parallel.andriod.Appium_TestNG_Sample_One@42e26948]" name="landing" duration-ms="1178" started-at="2017-03-02T18:19:42Z" finished-at="2017-03-02T18:19:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[GalaxyS5]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[0815f83dd9d41c01]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[6.0.0]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[127.0.0.3:1050/wd/hub]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.1.0', revision: 'b94c902', time: '2017-02-16 12:21:31 -0800'
-System info: host: 'S19', ip: '192.168.137.2', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_112'
-Driver info: driver.version: AndroidDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.1.0', revision: 'b94c902', time: '2017-02-16 12:21:31 -0800'
-System info: host: 'S19', ip: '192.168.137.2', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_112'
-Driver info: driver.version: AndroidDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:161)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:64)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:69)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
-	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:36)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:114)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:132)
-	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:92)
-	at demo.appium.parallel.andriod.Appium_TestNG_Sample_One.landing(Appium_TestNG_Sample_One.java:47)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- landing -->
-      </class> <!-- demo.appium.parallel.andriod.Appium_TestNG_Sample_One -->
-    </test> <!-- Device3 -->
-    <test name="Device2" duration-ms="67620" started-at="2017-03-02T10:19:42Z" finished-at="2017-03-02T10:20:49Z">
-      <class name="demo.appium.parallel.andriod.Appium_TestNG_Sample_One">
-        <test-method status="PASS" signature="landing(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:demo.appium.parallel.andriod.Appium_TestNG_Sample_One@6d4b1c02]" name="landing" duration-ms="67597" started-at="2017-03-02T18:19:42Z" finished-at="2017-03-02T18:20:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Nexus7]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[192.168.137.102:5555]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[6.0.0]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[127.0.0.2:1020/wd/hub]]>
+                <![CDATA[127.0.0.1:5130/wd/hub]]>
               </value>
             </param>
           </params>
@@ -213,5 +35,88 @@ Driver info: driver.version: AndroidDriver
         </test-method> <!-- landing -->
       </class> <!-- demo.appium.parallel.andriod.Appium_TestNG_Sample_One -->
     </test> <!-- Device2 -->
+    <test name="Device1" duration-ms="263064" started-at="2017-03-08T10:10:58Z" finished-at="2017-03-08T10:15:21Z">
+      <class name="demo.appium.parallel.andriod.Appium_TestNG_Sample_One">
+        <test-method status="FAIL" signature="landing(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:demo.appium.parallel.andriod.Appium_TestNG_Sample_One@14acaea5]" name="landing" duration-ms="252781" started-at="2017-03-08T18:10:58Z" finished-at="2017-03-08T18:15:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Galaxy Note 5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[192.168.1.146:5555]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4.4.2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[127.0.0.1:5010/wd/hub]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: Error: ESOCKETTIMEDOUT (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 240.05 seconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'Philips-MacBook-Pro.local', ip: '192.168.1.126', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_121'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{networkConnectionEnabled=true, warnings={}, databaseEnabled=false, version=4.4.2, deviceName=192.168.1.146:5555, platform=ANDROID, deviceUDID=192.168.1.146:5555, desired={newCommandTimeout=0, browserName=chrome, platformName=Android, udid=192.168.1.146:5555, version=4.4.2, deviceName=Galaxy Note 5, platform=ANDROID}, newCommandTimeout=0, platformVersion=5.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, platformName=Android, udid=192.168.1.146:5555}]
+Session ID: 710bbf9d-c03d-4711-82db-1463aafe2293]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: Error: ESOCKETTIMEDOUT (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 240.05 seconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'Philips-MacBook-Pro.local', ip: '192.168.1.126', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.3', java.version: '1.8.0_121'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{networkConnectionEnabled=true, warnings={}, databaseEnabled=false, version=4.4.2, deviceName=192.168.1.146:5555, platform=ANDROID, deviceUDID=192.168.1.146:5555, desired={newCommandTimeout=0, browserName=chrome, platformName=Android, udid=192.168.1.146:5555, version=4.4.2, deviceName=Galaxy Note 5, platform=ANDROID}, newCommandTimeout=0, platformVersion=5.1.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, platformName=Android, udid=192.168.1.146:5555}]
+Session ID: 710bbf9d-c03d-4711-82db-1463aafe2293
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
+	at demo.appium.parallel.andriod.Appium_TestNG_Sample_One.landing(Appium_TestNG_Sample_One.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- landing -->
+      </class> <!-- demo.appium.parallel.andriod.Appium_TestNG_Sample_One -->
+    </test> <!-- Device1 -->
   </suite> <!-- Suite -->
 </testng-results>
