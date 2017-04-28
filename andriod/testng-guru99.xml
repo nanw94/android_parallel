@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="1">
+
+	<test name="Device3">
+		<parameter name="deviceName_" value="GalaxyS6" />
+		<parameter name="UDID_" value="192.168.1.186:5555" />
+		<parameter name="platformVersion_" value="6.0.1" />
+		<!-- <parameter name="browserName_" value="Firefox" /> -->
+
+		<parameter name="URL_" value="0.0.0.0:5030/wd/hub" />
+		<classes>
+			<class name="guru99demo.guru99script" />
+		</classes>
+	</test>
+	<test name="Device1">
+		<parameter name="deviceName_" value="Galaxy Note 5" />
+		<!-- <parameter name="browserName_" value="Chrome" /> -->
+		<parameter name="UDID_" value="192.168.1.146:5555" />
+		<parameter name="platformVersion_" value="4.4.2" />
+		<parameter name="URL_" value="127.0.0.1:5010/wd/hub" />
+		<classes>
+			<class name="guru99demo.guru99script" />
+		</classes>
+	</test>
+	<!-- <test name="Device2"> -->
+	<!-- <parameter name="deviceName_" value="Tablet 4" /> -->
+	<!-- <parameter name="UDID_" value="192.168.1.166:5555" /> -->
+	<!-- <parameter name="platformVersion_" value="5.1.1" /> -->
+	<!-- <parameter name="URL_" value="0.0.0.0:5130/wd/hub" /> -->
+	<!-- <classes> -->
+	<!-- <class name="guru99demo.guru99script" /> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+</suite> <!-- Suite -->

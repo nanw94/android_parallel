@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <test name="Device1(failed)" parallel="tests">
-    <parameter name="platformVersion_" value="4.4.2"/>
-    <parameter name="URL_" value="127.0.0.1:5010/wd/hub"/>
-    <parameter name="UDID_" value="192.168.1.146:5555"/>
-    <parameter name="deviceName_" value="Galaxy Note 5"/>
+  <test name="Device2(failed)" parallel="tests">
+    <parameter name="platformVersion_" value="5.1.1"/>
+    <parameter name="URL_" value="127.0.0.1:5130/wd/hub"/>
+    <parameter name="UDID_" value="192.168.56.102:5555"/>
+    <parameter name="deviceName_" value="Nexus 10"/>
     <classes>
       <class name="demo.appium.parallel.andriod.Appium_TestNG_Sample_One">
         <methods>
-          <include name="landing" invocation-numbers="0"/>
+          <include name="login"/>
+          <include name="landing"/>
+          <include name="aftertest"/>
+        </methods>
+      </class> <!-- demo.appium.parallel.andriod.Appium_TestNG_Sample_One -->
+    </classes>
+  </test> <!-- Device2(failed) -->
+  <test name="Device1(failed)" parallel="tests">
+    <parameter name="platformVersion_" value="6.0.0"/>
+    <parameter name="URL_" value="0.0.0.0:5010/wd/hub"/>
+    <parameter name="UDID_" value="192.168.56.101:5555"/>
+    <parameter name="deviceName_" value="Galaxy S7"/>
+    <classes>
+      <class name="demo.appium.parallel.andriod.Appium_TestNG_Sample_One">
+        <methods>
+          <include name="login"/>
+          <include name="landing"/>
+          <include name="aftertest"/>
         </methods>
       </class> <!-- demo.appium.parallel.andriod.Appium_TestNG_Sample_One -->
     </classes>

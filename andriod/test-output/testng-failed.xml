@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <test name="Device1(failed)" parallel="tests">
-    <parameter name="platformVersion_" value="4.4.2"/>
-    <parameter name="URL_" value="127.0.0.1:5010/wd/hub"/>
-    <parameter name="UDID_" value="192.168.1.146:5555"/>
-    <parameter name="deviceName_" value="Galaxy Note 5"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="demo.appium.parallel.andriod.Appium_TestNG_Sample_One">
+      <class name="guru99demo.guru99script_ios">
         <methods>
-          <include name="landing" invocation-numbers="0"/>
+          <include name="aftertest"/>
+          <include name="beforeclass"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- demo.appium.parallel.andriod.Appium_TestNG_Sample_One -->
+      </class> <!-- guru99demo.guru99script_ios -->
     </classes>
-  </test> <!-- Device1(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

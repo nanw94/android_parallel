@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="demo.appium.parallel.andriod.Appium_TestNG_Sample_One">
+      <class name="guru99demo.guru99script_ios">
         <methods>
-          <include name="Landing"/>
+          <include name="aftertest"/>
+          <include name="beforeclass"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- demo.appium.parallel.andriod.Appium_TestNG_Sample_One -->
+      </class> <!-- guru99demo.guru99script_ios -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
